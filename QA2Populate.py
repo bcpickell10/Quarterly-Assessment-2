@@ -61,3 +61,16 @@ cr.execute(
     c. Evaluating potential solutions
     d. Monitoring the outcomes of the chosen solution','b')"""
 )
+
+cr.execute(
+    """INSERT INTO Apps_Development VALUES
+    (1,'True/False: Python is a compiled programming language, meaning code is translated into machine language before execution.','False'),
+    (2,'In Python, a ________ is a collection of items that are ordered and changeable.','list'),
+    (3,' In Python, the ________ method is used to execute SQL queries on an SQLite database.','execute'),
+    (4,'Which SQL statement is used to retrieve data from a database?
+    a. SELECT
+    b. UPDATE
+    c. DELETE
+    d. INSERT','b'),
+    (5,'The ________ statement in SQL is used to add new records to a database table.','INSERT')"""
+)
