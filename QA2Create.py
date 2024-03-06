@@ -4,7 +4,7 @@ cr=conn.cursor()
 
 cr.execute(
     """CREATE TABLE IF NOT EXISTS Finance
-    (id TEXT PRIMARY KEY, Question TEXT, Answer TEXT)""")
+    (ID TEXT PRIMARY KEY, Question TEXT, Answer TEXT)""")
 
 cr.execute(
     """CREATE TABLE IF NOT EXISTS Analytics
