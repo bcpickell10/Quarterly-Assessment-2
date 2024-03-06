@@ -31,3 +31,16 @@ cr.execute(
     c. An increase in the independent variable is associated with an increase in the dependent variable
     d. The coefficient is not interpretable','c')"""
 )
+
+cr.execute(
+    """INSERT INTO Business_Management VALUES
+    (1,'True/False: Ethical decision making involves considering only the short-term consequences of actions.','False'),
+    (2,'Multiple Choice: Which of the following is NOT a step in the ethical decision-making process?
+    a. Identifying the ethical dilemma
+    b. Evaluating potential consequences
+    c. Ignoring the consequences of actions
+    d. Making a decision and taking action','c'),
+    (3,'True/False: Ethical leaders prioritize personal gains over the well-being of their team and organization.','False'),
+    (4,'Ethical leaders demonstrate ________ by holding themselves and others accountable for their actions.','accountability'),
+    (5,'Upholding core ________ such as honesty and integrity contributes to fostering an ethical workplace culture.','values')"""
+)
