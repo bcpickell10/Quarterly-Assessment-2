@@ -44,3 +44,20 @@ cr.execute(
     (4,'Ethical leaders demonstrate ________ by holding themselves and others accountable for their actions.','accountability'),
     (5,'Upholding core ________ such as honesty and integrity contributes to fostering an ethical workplace culture.','values')"""
 )
+
+cr.execute(
+    """INSERT INTO Analytical_Thinking VALUES
+    (1,'True/False: Critical thinking involves accepting information at face value without questioning its validity.','False'),
+    (2,'True/False: Professionalism in the workplace includes demonstrating integrity and ethical behavior.','True'),
+    (3,'What does professionalism entail in a business setting?
+    a. Dressing formally at all times
+    b. Following ethical guidelines and standards
+    c. Ignoring deadlines and commitments
+    d. Avoiding collaboration with colleagues','b'),
+    (4,'Effective problem-solving requires a ________ approach, considering various perspectives and potential solutions.','systematic'),
+    (5,'Which of the following is NOT a step in effective problem-solving?
+    a. Identifying the root cause of the problem
+    b. Implementing the first solution that comes to mind
+    c. Evaluating potential solutions
+    d. Monitoring the outcomes of the chosen solution','b')"""
+)
