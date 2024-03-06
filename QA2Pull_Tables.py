@@ -1,6 +1,6 @@
 import sqlite3
 
-def get_table_names(database_file):
+def get_table_names_and_values(database_file):
     # Connect to the SQLite database
     conn = sqlite3.connect(database_file)
     
@@ -17,7 +17,19 @@ def get_table_names(database_file):
         # Print the names of the tables
         print("Names of tables in the database:")
         for table in table_names:
-            print(table[0])
+            table_name = table[0]
+            print("\nTable:", table_name)
+            
+            # Retrieve values from each table
+            cursor.execute(f"SELECT * FROM {table_name}")
+            
+            # Fetch all rows from the cursor
+            rows = cursor.fetchall()
+            
+            # Print the values from the table
+            print("Values:")
+            for row in rows:
+                print(row)
     
     except sqlite3.Error as e:
         print("Error retrieving table names:", e)
@@ -29,4 +41,4 @@ def get_table_names(database_file):
 
 # Replace 'database_file_name.db' with the name of your SQL database file
 database_file = 'quarterly_assessment.db'
-get_table_names(database_file)
+get_table_names_and_values(database_file)
